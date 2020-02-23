@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="اسم الطالب"
+        android:layout_marginTop="150dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:inputType="textEmailAddress"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="150dp"
+            android:text="التالي"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25dp"
+            />
+
+</LinearLayout>

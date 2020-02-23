@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="قم بالإجابة على جميع الأسئلة:"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. كيف أشعر في الشهر الماضي؟"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:id="@+id/radio_group1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/third1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:drawableRight="@drawable/third"/>
+
+
+
+            <RadioButton
+                android:id="@+id/second1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:drawableRight="@drawable/second"/>
+
+
+            <RadioButton
+                android:id="@+id/first1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:drawableRight="@drawable/first"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. اصادر كتب و كراسات بعض زملائي في الصف؟"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:id="@+id/radio_group2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/third2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:text="يصادر بعض الطلاب كتبي"
+                android:textCursorDrawable="@color/colorPrimaryDark"
+                android:textSize="18dp"/>
+
+
+            <RadioButton
+                android:id="@+id/second2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:text="غير صحيح"
+                android:textSize="18dp"/>
+
+            <RadioButton
+                android:id="@+id/first2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:text="صحيح"
+                android:textSize="18dp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. أصبحت عضو في عصابة وأنا اليوم قوي ولا أحد يجرؤ على مضايقتي؟"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:id="@+id/radio_group3"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/second3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:text="لا أنتمي لأي عصابة"
+                android:textSize="18dp"/>
+
+
+            <RadioButton
+                android:id="@+id/first3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:text="صحيح"
+                android:textSize="18dp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. أسخر و زملائي من الطلاب البدينين أو الذين لا يعجبني شكلهم؟"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:id="@+id/radio_group4"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/third4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:text="لا أكترث لذلك"
+                android:textSize="18dp"/>
+
+            <RadioButton
+                android:id="@+id/second4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:text="غير صحيح"
+                android:textSize="18dp"/>
+
+            <RadioButton
+                android:id="@+id/first4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:text="صحيح"
+                android:textSize="18dp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5. يتشتت انتباهي بسرعة وأنا قليل التركيز؟"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:id="@+id/radio_group5"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/third5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:text="لا"
+                android:textSize="18dp"/>
+
+            <RadioButton
+                android:id="@+id/second5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:text="أحيانا"
+                android:textSize="18dp"/>
+
+            <RadioButton
+                android:id="@+id/first5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:text="نعم"
+                android:textSize="18dp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6. أخاف أن أخبر المعلم اذا أزعجني أحد الطلاب خوفا من أن يضربني؟"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:id="@+id/radio_group6"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/third6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="top"
+                android:layoutDirection="rtl"
+                android:text="اذا أخبر المعلم عني فسأضربه بالتأكيد"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+
+
+            <RadioButton
+                android:id="@+id/second6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:text="غير صحيح"
+                android:textSize="18dp"/>
+
+            <RadioButton
+                android:id="@+id/first6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:text="صحيح"
+                android:textSize="18dp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. أستقوي على اخوتي الصغار وأبناء حارتي أضربهم بشدة وأعنفهم؟"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:id="@+id/radio_group7"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/third7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="start"
+                    android:layoutDirection="rtl"
+                    android:text="قمت بذلك مرة واحدة"
+                    android:textAlignment="textStart"
+                    android:textSize="18dp" />
+
+
+
+                <RadioButton
+                    android:id="@+id/second7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:text="غير صحيح"
+                    android:textSize="18dp"/>
+
+                <RadioButton
+                    android:id="@+id/first7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:text="صحيح"
+                    android:textSize="18dp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8. أشعر بالسعادة والنجاح والانتصار عندما أعتدي وشلتي على الطلاب؟"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:id="@+id/radio_group8"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/third8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="start"
+                    android:layoutDirection="rtl"
+                    android:text="هناك من يعتدي علي"
+                    android:textAlignment="textStart"
+                    android:textSize="18dp" />
+
+
+
+                <RadioButton
+                    android:id="@+id/second8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:text="غير صحيح"
+                    android:textSize="18dp"/>
+
+                <RadioButton
+                    android:id="@+id/first8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:text="صحيح"
+                    android:textSize="18dp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9. كل طالب يرفض مساعدتي في الامتحانات أنتظره بعد الانتهاء من الدوام الدراسي وأعتدي عليه؟"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:id="@+id/radio_group9"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/third9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="start"
+                    android:layoutDirection="rtl"
+                    android:text="يحدث معي العكس يعتدون علي اذا لم أغششهم"
+                    android:textAlignment="textStart"
+                    android:textSize="18dp" />
+
+
+
+                <RadioButton
+                    android:id="@+id/second9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:text="غير صحيح"
+                    android:textSize="18dp"/>
+
+                <RadioButton
+                    android:id="@+id/first9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:text="صحيح"
+                    android:textSize="18dp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10. أماكن لا أشعر بها بالأمان والراحة؟"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            >
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_group10"
+                android:weightSum="5">
+
+                <RadioButton
+                    android:id="@+id/first10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:layoutDirection="rtl"
+                    android:text="البيت"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/second10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layoutDirection="rtl"
+                    android:layout_gravity="right"
+                    android:text="مواقع التواصل الاجتماعي"
+                    android:textSize="18dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/third10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    android:layoutDirection="rtl"
+                    android:text="الشارع"
+                    android:textSize="18dp" />
+
+
+                <RadioButton
+                    android:id="@+id/forth10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    android:layoutDirection="rtl"
+                    android:text="المدرسة"
+                    android:textSize="18dp" />
+
+
+                <RadioButton
+                    android:id="@+id/fifth10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    android:layoutDirection="rtl"
+                    android:text="أشعر بالأمان في كل مما ذكر"
+                    android:textSize="18dp" />
+
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11. أهدد وشلتي بنشر بعض الصور لبعض الطلاب ونبتزهم ويدفعون لنا أموالا مقابل الكف عن ذلك؟"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:id="@+id/radio_group11"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/third11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="start"
+                    android:layoutDirection="rtl"
+                    android:text="لا أفعل هذا أبدا"
+                    android:textAlignment="textStart"
+                    android:textSize="18dp" />
+
+
+
+                <RadioButton
+                    android:id="@+id/second11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:text="أنا أتعرض لهذا الابتزاز"
+                    android:textSize="18dp"/>
+
+                <RadioButton
+                    android:id="@+id/first11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:text="صحيح"
+                    android:textSize="18dp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12. ما هو شعوري الان؟"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:id="@+id/radio_group12"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/third12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:drawableRight="@drawable/third"/>
+
+
+
+                <RadioButton
+                    android:id="@+id/second12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:drawableRight="@drawable/second"/>
+
+
+                <RadioButton
+                    android:id="@+id/first12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:drawableRight="@drawable/first"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13. ايات فتاة محبوبة بين شلتها في المدرسة، بتضحكهم دائما لما تضرب الي اصغر منها وتتمسخر عليهم ومرات بيغلط وبيشتم وصديقاتها مكيفات عليها، عشان كثار الي بخافوا منها.
+
+
+            ماذا تعني شخصية ايات بالنسبة لك؟"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            >
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_group13"
+                android:weightSum="5">
+
+                <RadioButton
+                    android:id="@+id/first13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:layoutDirection="rtl"
+                    android:text="هناك أشخاص في حياتي مثل ايات"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/second13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layoutDirection="rtl"
+                    android:layout_gravity="right"
+                    android:text="لا أحب مثل هذا النوع من الشخصيات"
+                    android:textSize="18dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/third13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    android:layoutDirection="rtl"
+                    android:text="أنا أمثل شخصية اّيات"
+                    android:textSize="18dp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:text="ارسال"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
